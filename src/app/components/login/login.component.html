@@ -1,10 +1,15 @@
 
-    
-    <form method="post">
-
     <div class="login-box">
         <img class="avatar" src="../../../assets/img/user.png" >
         
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+
+            <div>
+                <input type="text" #user="ngModel" name="user" [(ngModel)]="userData.user" required>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
        
     </div>
 

@@ -2,20 +2,22 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-login',
-  templateUrl: '.login.component.html',
+  templateUrl: 'login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
 
-  public userData = {
-    user:""
+  userData = {
+    user: ""
   }
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onSubmit() {
+  async onSubmit(form: any){
+    console.log(this.userData);
     
   }
 }
