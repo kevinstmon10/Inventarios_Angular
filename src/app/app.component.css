@@ -1,0 +1,14 @@
+.bg-img{
+    margin: 0;
+    padding: 0;
+    background: url(../assets/img/inv.png) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
