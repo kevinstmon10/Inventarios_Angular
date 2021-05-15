@@ -1,4 +1,4 @@
-.local1 {
+.texventi {
     width: 300px;
     height: 50px;
     position: relative;
@@ -11,7 +11,7 @@
     left: 300px;
 
 }
-.local {
+.graventi {
     width: 500px;
     height: 320px;
     position: relative;
@@ -23,5 +23,3 @@
     top: -520px;
     left: 400px;
 }
-
-

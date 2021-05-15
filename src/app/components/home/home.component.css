@@ -8,7 +8,7 @@
     margin: auto;
 }
 .box {
-    width: 300px;
+    width: 310px;
     height: 200px;
     position: relative;
     overflow: hidden;
@@ -19,8 +19,8 @@
     top: -450px;
 }
 .box img {
-    width: 220px;
-    height: 170px;
+    width: 210px;
+    height: 180px;
 
 
 }
@@ -43,7 +43,7 @@
 }
 
 .local {
-    width: 300px;
+    width: 400px;
     height: 220px;
     position: relative;
     overflow: hidden;
@@ -52,10 +52,10 @@
     border:5px solid rgb(252, 252, 252);
     border-radius: 5px;
     top: -320px;
-    left: 500px;
+    left: 460px;
 }
 .local img {
-    width: 300px;
+    width: 400px;
     height: 200px;
 
 

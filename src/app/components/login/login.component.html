@@ -4,11 +4,12 @@
         
         <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
 
-            <div>
-                <input type="text" #user="ngModel" name="user" [(ngModel)]="userData.user" required>
-            </div>
+            <input type="text" placeholder=" Usuario" name="usuario" >  
 
-            <button type="submit">Enviar</button>
+                <input type="password" placeholder=" Contraseña" name="contraseña">
+
+                <a href="./humedad" ></a><input type="submit" value="&#9094; Entrar"> 
+                <a href="./humedad" class="close-sesion">Ver Detalles</a>
         </form>
        
     </div>
