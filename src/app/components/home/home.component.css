@@ -16,7 +16,7 @@
     background: white;
     border:5px solid rgb(252, 252, 252);
     border-radius: 5px;
-    top: -450px;
+    top: -490px;
 }
 .box img {
     width: 210px;
@@ -47,17 +47,16 @@
     height: 220px;
     position: relative;
     overflow: hidden;
-    margin: 20px;
+    margin: -270px;
     background: white;
     border:5px solid rgb(252, 252, 252);
     border-radius: 5px;
-    top: -320px;
-    left: 460px;
+    top: -70px;
+    left: 730px;
 }
 .local img {
     width: 400px;
     height: 200px;
-
 
 }
 .capa1{
