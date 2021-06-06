@@ -1,25 +1,27 @@
-.texventi {
-    width: 300px;
+
+.graventi {
+    width: 550px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: -10px;
+    background: white;
+    border:5px solid rgb(182, 165, 10);
+    border-radius: 5px;
+    top: -550px;
+    left: 400px;
+}
+
+.estamb1 {
+    width: 210px;
     height: 50px;
     position: relative;
     overflow: hidden;
-    margin: 50px;
-    background: #d3cdcd;
-    opacity: .80;
+    margin: -410px;
+    background: #c4e2c4;
+    opacity: 1;
     color: rgb(0, 0, 0);
-    top: -620px;
-    left: 300px;
+    top: -100px;
+    left: 980px;
 
-}
-.graventi {
-    width: 500px;
-    height: 320px;
-    position: relative;
-    overflow: hidden;
-    margin: 20px;
-    background: white;
-    border:5px solid rgb(252, 252, 252);
-    border-radius: 5px;
-    top: -520px;
-    left: 400px;
 }
