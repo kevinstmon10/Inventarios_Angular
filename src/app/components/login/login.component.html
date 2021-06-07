@@ -4,11 +4,11 @@
         
         <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
 
-            <input type="text" placeholder=" Usuario" name="usuario" >  
+            <input type="text" placeholder=" email" name="email" #email="ngModel" [(ngModel)]="user.email">  
 
-                <input type="password" placeholder=" Contraseña" name="contraseña">
+            <input type="password" placeholder=" Contraseña" name="password" #password="ngModel" [(ngModel)]="user.password">
 
-                <a href="./humedad" ></a><input type="submit" value="&#9094; Entrar"> 
+            <a href="./humedad" ></a><input type="submit" value="&#9094; Entrar"> 
 
         </form>
        

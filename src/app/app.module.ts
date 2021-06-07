@@ -12,8 +12,10 @@ import { HumedadComponent } from './components/humedad/humedad.component';
 import { TempAguaComponent } from './components/temp-agua/temp-agua.component';
 import { VentiladorComponent } from './components/ventilador/ventilador.component';
 import { EstatusGeneralComponent } from './components/estatus-general/estatus-general.component';
+
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
+import { ChartsModule } from 'ng2-charts';
 
 
 var firebaseConfig = {
@@ -45,7 +47,8 @@ var firebaseConfig = {
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
