@@ -24,9 +24,9 @@ export class VentiladorComponent implements OnInit {
       .collection('Sensores')
       .doc('Ventilador')
       .valueChanges()
-      .subscribe(async ({ Status }: any) => {
-        console.log(Status);
-        this.ventiladorStatus = Status;
+      .subscribe(async ({ status }: any) => {
+        console.log(status);
+        this.ventiladorStatus = status;
       });
   }
 }

@@ -66,9 +66,9 @@ export class TempAguaComponent implements OnInit {
       .collection('Sensores')
       .doc('Bomba')
       .valueChanges()
-      .subscribe(async ({ Status }: any) => {
-        console.log(Status);
-        this.bombaStatus = Status;
+      .subscribe(async ({ status }: any) => {
+        console.log(status);
+        this.bombaStatus = status;
       });
   }
 }
