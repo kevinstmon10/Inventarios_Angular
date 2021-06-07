@@ -17,15 +17,14 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
 import { ChartsModule } from 'ng2-charts';
 
-
 var firebaseConfig = {
-  apiKey: "AIzaSyAMKRqjeY4M7DDsW3jD1ZI-LxPrGdLIkR0",
-  authDomain: "invernadero-1bb85.firebaseapp.com",
-  projectId: "invernadero-1bb85",
-  storageBucket: "invernadero-1bb85.appspot.com",
-  messagingSenderId: "263903531088",
-  appId: "1:263903531088:web:11d4fcb9d922fb4ff00155",
-  measurementId: "G-Y79DXXWBFK"
+  apiKey: 'AIzaSyAMKRqjeY4M7DDsW3jD1ZI-LxPrGdLIkR0',
+  authDomain: 'invernadero-1bb85.firebaseapp.com',
+  projectId: 'invernadero-1bb85',
+  storageBucket: 'invernadero-1bb85.appspot.com',
+  messagingSenderId: '263903531088',
+  appId: '1:263903531088:web:11d4fcb9d922fb4ff00155',
+  measurementId: 'G-Y79DXXWBFK',
 };
 // Initialize Firebase
 //firebase.initializeApp(firebaseConfig);
@@ -48,9 +47,9 @@ var firebaseConfig = {
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
-    ChartsModule
+    ChartsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

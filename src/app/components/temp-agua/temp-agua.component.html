@@ -1,21 +1,43 @@
 <div class="texag">
-    <div class="capa11"><h4>Estatus de la Temperatura del Agua:</h4></div>
-    
- </div>
+  <div class="capa11">
+    <h4>Estatus de la Temperatura del Agua: {{ lastValue }}</h4>
+  </div>
+</div>
 <div class="graag">
-    <div class="capa1"><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        Grafica de la Temperatura del Agua</h2></div>
-    
- </div>
+  <div class="capa1">
+    <canvas
+      baseChart
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [options]="lineChartOptions"
+      [colors]="lineChartColors"
+      [legend]="lineChartLegend"
+      [chartType]="lineChartType"
+      [plugins]="lineChartPlugins"
+    >
+    </canvas>
+  </div>
+</div>
 
- <div class="graag2">
-    <div class="capa2"><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estado de la Bomba</h2></div>
-    
- </div>
+<div class="graag2">
+  <div class="capa2" style="text-align: center">
+    <h2 *ngIf="bombaStatus">Estatus Bomba: On</h2>
+    <h2 *ngIf="!bombaStatus">Estatus Bomba: Off</h2>
 
- <div class="estamb1">
-    <div class="capa11"><h4><a [routerLink]="['/home']" routerLinkActive="router-link-active" class="close-sesion">Regresar a la Pagina Anterior</a></h4>
-    </div>
-    
- </div>
+    <img *ngIf="bombaStatus" src="../../../assets/img/BombaOn.gif" alt="" />
+    <img *ngIf="!bombaStatus" src="../../../assets/img/BombaOff.jpg" alt="" />
+  </div>
+</div>
+
+<div class="estamb1">
+  <div class="capa11">
+    <h4>
+      <a
+        [routerLink]="['/home']"
+        routerLinkActive="router-link-active"
+        class="close-sesion"
+        >Regresar a la Pagina Anterior</a
+      >
+    </h4>
+  </div>
+</div>
