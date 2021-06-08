@@ -1,17 +1,22 @@
+<div class="login-box">
+  <img class="avatar" src="../../../assets/img/user.png" />
 
-    <div class="login-box">
-        <img class="avatar" src="../../../assets/img/user.png" >
-        
-        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+    <input
+      type="text"
+      placeholder=" email"
+      name="email"
+      #email="ngModel"
+      [(ngModel)]="user.email"
+    />
+    <input
+      type="password"
+      placeholder=" Contraseña"
+      name="password"
+      #password="ngModel"
+      [(ngModel)]="user.password"
+    />
 
-            <input type="text" placeholder=" email" name="email" #email="ngModel" [(ngModel)]="user.email">  
-
-            <input type="password" placeholder=" Contraseña" name="password" #password="ngModel" [(ngModel)]="user.password">
-
-            <a href="./humedad" ></a><input type="submit" value="&#9094; Entrar"> 
-
-        </form>
-       
-    </div>
-
-
+    <input type="submit" value="&#9094; Entrar" />
+  </form>
+</div>
