@@ -31,22 +31,27 @@ const routes: Routes = [
   {
     path: 'temperatura',
     component: TemperaturaComponent,
+    canActivate: [GuardService],
   },
   {
     path: 'humedad',
     component: HumedadComponent,
+    canActivate: [GuardService],
   },
   {
     path: 'temp-agua',
     component: TempAguaComponent,
+    canActivate: [GuardService],
   },
   {
     path: 'ventilador',
     component: VentiladorComponent,
+    canActivate: [GuardService],
   },
   {
     path: 'estatus-general',
     component: EstatusGeneralComponent,
+    canActivate: [GuardService],
   },
 ];
 

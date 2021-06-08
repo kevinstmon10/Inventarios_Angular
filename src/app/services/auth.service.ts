@@ -1,18 +1,8 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class AuthService { 
-
-  constructor(
-    private afsAuth: AngularFireAuth
-  ) { }
-
-  
-  logged(){
-
-    return this.afsAuth.user
-  }
-
+export class AuthService {
+  constructor(private afsAuth: AngularFireAuth) {}
 }
